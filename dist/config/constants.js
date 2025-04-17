@@ -1,0 +1,40 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RequestAction = exports.COLLECTION_NAMES = exports.UserRoles = void 0;
+var UserRoles;
+(function (UserRoles) {
+    UserRoles["ADMIN"] = "ADMIN";
+    UserRoles["LEAD_MARKETING"] = "LEAD_MARKETING";
+    UserRoles["EMPLOYEE_MARKETING"] = "EMPLOYEE_MARKETING";
+    UserRoles["BASIC_USER"] = "BASIC_USER";
+    UserRoles["COUNSELOR"] = "COUNSELOR";
+    UserRoles["REGISTAR"] = "REGISTAR";
+    UserRoles["HOD"] = "HOD";
+    UserRoles["INSTRUCTOR"] = "INSTRUCTOR";
+})(UserRoles || (exports.UserRoles = UserRoles = {}));
+var COLLECTION_NAMES;
+(function (COLLECTION_NAMES) {
+    COLLECTION_NAMES["USER"] = "User";
+    COLLECTION_NAMES["VERIFY_OTP"] = "VerifyOtp";
+    COLLECTION_NAMES["ENQUIRY"] = "Enquiry";
+    COLLECTION_NAMES["ENQUIRY_DRAFT"] = "EnquiryDraft";
+    COLLECTION_NAMES["ENQUIRY_ID_META_DATA"] = "EnquiryIdMetaData";
+    COLLECTION_NAMES["STUDENT_FEE"] = "studentFee";
+    COLLECTION_NAMES["STUDENT_FEE_DRAFT"] = "studentFeeDraft";
+    COLLECTION_NAMES["DEPARTMENT_COURSE"] = "deptandcourse";
+    COLLECTION_NAMES["LEAD"] = "Lead";
+    COLLECTION_NAMES["SPREADSHEET_META_DATA"] = "spreadSheetMetaData";
+    COLLECTION_NAMES["YELLOW_LEAD"] = "YellowLead";
+    COLLECTION_NAMES["COURSE_OTHER_FEES"] = "CourseAndOtherFees";
+    COLLECTION_NAMES["STUDENT"] = "Student";
+    COLLECTION_NAMES["DEPARTMENT_META_DATA"] = "DepartmentMetaData";
+    COLLECTION_NAMES["COURSE"] = "Course";
+    COLLECTION_NAMES["DROP_DOWN_META_DATA"] = "DropDownMetaData";
+})(COLLECTION_NAMES || (exports.COLLECTION_NAMES = COLLECTION_NAMES = {}));
+var RequestAction;
+(function (RequestAction) {
+    RequestAction["PUT"] = "PUT";
+    RequestAction["POST"] = "POST";
+    RequestAction["DELETE"] = "DELETE";
+    RequestAction["PATCH"] = "PATCH";
+})(RequestAction || (exports.RequestAction = RequestAction = {}));
